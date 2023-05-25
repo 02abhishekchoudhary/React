@@ -1,10 +1,12 @@
 import './App.css';
+import ClassComp from './Components/ClassComp';
+import FunctionComp from './Components/FunctionComp';
 
 function App() {
   return (
     <div className="App">
-      <p>Hello World</p>
-      <p>React</p>
+      {/* <ClassComp/> */}
+      <FunctionComp/>
     </div>
   );
 }
