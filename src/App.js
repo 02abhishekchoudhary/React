@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import "./App.css";
 import ClassComp from "./Components/ClassComp";
 import ComponentA from "./Components/ComponentA";
@@ -6,11 +6,14 @@ import FunctionComp from "./Components/FunctionComp";
 import PropsClassComp from "./Components/PropsClassComp";
 import PropsFunctionComp from "./Components/PropsFunctionComp";
 import FormComp from "./Components/FormComp";
+import ClassLC from "./Components/ClassLC";
+import FunctionalLC from "./Components/FunctionalLC";
 
 export const messageContext = createContext(null);
 // messageContext.displayName="Message";
 
 function App() {
+  const [mount, setMount] = useState(true);
   return (
     <div className="App">
       {/* <ClassComp/> */}
@@ -30,8 +33,17 @@ function App() {
         <ComponentA />
       </messageContext.Provider> */}
 
-      <FormComp/>
+      {/* <FormComp/> */}
+      {/* {mount && <ClassLC />}
+      <div>
+        <button onClick={() => setMount(!mount)}>Mount/Unmount</button>
+      </div> */}
 
+      {/* <FunctionalLC/> */}
+      {mount && <FunctionalLC />}
+      <div>
+        <button onClick={() => setMount(!mount)}>Mount/Unmount</button>
+      </div>
     </div>
   );
 }
