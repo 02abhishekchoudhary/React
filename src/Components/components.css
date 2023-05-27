@@ -1,0 +1,9 @@
+.user-info{
+  background-color: grey;
+  margin-top: 20px;
+  color: white;
+}
+
+.user-info:first-child{
+  margin-top: 0;
+}
