@@ -2,8 +2,9 @@ import React, { Children, useState } from "react";
 import ItemDetails from "./ItemDetails";
 import usersData from "./users.json";
 import "./components.css";
+import ComponentA from "./ComponentA";
 
-console.log(usersData);
+// console.log(usersData);
 // We can diirectly pass destructured props in paramters instead of using props
 // e.g: const PropsFunctionComp = ({ name, num, user:{city, country} })
 
@@ -15,7 +16,8 @@ const PropsFunctionComp = (props) => {
   //   user: { userName, city },
   // } = props;
 
-  // const [number, setNumber] = useState(num);
+  const [number, setNumber] = useState(1);
+  console.log(number);
 
   return (
     <div>
@@ -36,14 +38,14 @@ const PropsFunctionComp = (props) => {
         </div>
       // </div> */}
 
-      {usersData.map((user, index) => (
+      {/* {usersData.map((user, index) => (
         // <div key={index} className="user-info">
         //   <div>{user.name}</div>
         //   <div>{user.email}</div>
         //   <div>{user.phone}</div>
         // </div>
         <ItemDetails key={index} name={user.name} email={ user.email} phone={user.phone} />
-      ))}
+      ))} */}
 
       {/* {usersData.map((user, index) => {
         return (
@@ -55,6 +57,8 @@ const PropsFunctionComp = (props) => {
         );
       })} */}
       {/* <ItemDetails/> */}
+      <ComponentA num={number} setNumber={setNumber} />
+      {/* <button onClick={() => setNumber(number + 1)}>Inc</button> */}
     </div>
   );
 };

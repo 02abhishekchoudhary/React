@@ -1,8 +1,14 @@
+import { createContext } from "react";
 import "./App.css";
 import ClassComp from "./Components/ClassComp";
+import ComponentA from "./Components/ComponentA";
 import FunctionComp from "./Components/FunctionComp";
 import PropsClassComp from "./Components/PropsClassComp";
 import PropsFunctionComp from "./Components/PropsFunctionComp";
+import FormComp from "./Components/FormComp";
+
+export const messageContext = createContext(null);
+// messageContext.displayName="Message";
 
 function App() {
   return (
@@ -17,9 +23,15 @@ function App() {
       >
         {{ color: "cyan", backgroundColor: "pink" }}
       </PropsFunctionComp> */}
-      <PropsFunctionComp />
-      <FunctionComp/>
-      
+      {/* <PropsFunctionComp /> */}
+      {/* <FunctionComp/> */}
+
+      {/* <messageContext.Provider value={"Message from App.js"}>
+        <ComponentA />
+      </messageContext.Provider> */}
+
+      <FormComp/>
+
     </div>
   );
 }
