@@ -8,6 +8,9 @@ import PropsFunctionComp from "./Components/PropsFunctionComp";
 import FormComp from "./Components/FormComp";
 import ClassLC from "./Components/ClassLC";
 import FunctionalLC from "./Components/FunctionalLC";
+import UseReducerComp from "./Components/UseReducerComp";
+import UseMemo from "./Components/UseMemo";
+import UseCallbackComp from "./Components/UseCallbackComp";
 
 export const messageContext = createContext(null);
 // messageContext.displayName="Message";
@@ -40,10 +43,13 @@ function App() {
       </div> */}
 
       {/* <FunctionalLC/> */}
-      {mount && <FunctionalLC />}
+      {/* {mount && <FunctionalLC />}
       <div>
         <button onClick={() => setMount(!mount)}>Mount/Unmount</button>
-      </div>
+      </div> */}
+      {/* <UseReducerComp/> */}
+      {/* <UseMemo/> */}
+      <UseCallbackComp/>
     </div>
   );
 }
