@@ -11,6 +11,9 @@ import FunctionalLC from "./Components/FunctionalLC";
 import UseReducerComp from "./Components/UseReducerComp";
 import UseMemo from "./Components/UseMemo";
 import UseCallbackComp from "./Components/UseCallbackComp";
+import UseForm from "./Components/UseForm";
+import NewForm from "./Components/NewForm";
+import UseFetchHook from "./Components/UseFetchHook";
 
 export const messageContext = createContext(null);
 // messageContext.displayName="Message";
@@ -49,7 +52,10 @@ function App() {
       </div> */}
       {/* <UseReducerComp/> */}
       {/* <UseMemo/> */}
-      <UseCallbackComp/>
+      {/* <UseCallbackComp/> */}
+      {/* <UseForm /> */}
+      {/* <NewForm/> */}
+      <UseFetchHook/>
     </div>
   );
 }
