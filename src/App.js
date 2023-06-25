@@ -18,6 +18,7 @@ import HoverComp from "./HOC/HoverComp";
 import CounterComp from "./HOC/CounterComp";
 import RenderTodos from "./HOC/RenderTodos";
 import RenderPosts from "./HOC/RenderPosts";
+import RouterComp from "./RouterComp";
 
 export const messageContext = createContext(null);
 // messageContext.displayName="Message";
@@ -64,6 +65,7 @@ function App() {
       {/* <HoverComp /> */}
       {/* <RenderTodos/> */}
       {/* <RenderPosts/> */}
+      {/* <RouterComp/> */}
     </div>
   );
 }

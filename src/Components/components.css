@@ -7,3 +7,15 @@
 .user-info:first-child{
   margin-top: 0;
 }
+
+.nav-active{
+  border-bottom: 2px solid blue;
+  color: rgb(10, 10, 208);
+  background-color: white;
+  text-decoration: none;
+}
+
+.nav-inActive{
+  color: rgb(118, 107, 107);
+  background-color: white;
+}
