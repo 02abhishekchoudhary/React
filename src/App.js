@@ -19,6 +19,7 @@ import CounterComp from "./HOC/CounterComp";
 import RenderTodos from "./HOC/RenderTodos";
 import RenderPosts from "./HOC/RenderPosts";
 import RouterComp from "./RouterComp";
+import Todo from "./Components/Todo";
 
 export const messageContext = createContext(null);
 // messageContext.displayName="Message";
@@ -66,6 +67,7 @@ function App() {
       {/* <RenderTodos/> */}
       {/* <RenderPosts/> */}
       {/* <RouterComp/> */}
+      <Todo/>
     </div>
   );
 }
